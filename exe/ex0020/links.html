@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        /* seletores personalizados
+        # = id 
+        . = class
+        : = pseudo-class
+        :: = pseudo-element
+        > = clindren
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+       a:visited { /* peseudo clase uma vez : */
+         color: darkred;
+       }
+
+       a:hover {        /* essa tag subrinha o texto do link quando eu passo o mouse por cima */
+        color: black;
+        text-decoration: underline;
+       }
+
+       a:active {
+        color: yellow;
+       }
+
+ a::after { /* peseuodo elemento duas vezes :: */
+content: ' →';
+text-decoration: none;
+font-weight: normal;
+color: darkgray;
+       }
+       a::before {  /* pode ser colocado simbolo ou palavras */
+
+        content: '⭠'; 
+       }
+    </style>
+</head>
+<body>
+    <h1>persenolaizando links</h1> <!-- tag de titulo-->
+    <ul> <!-- tag de lista -->
+ <li><a href="https://www.aliexpress.com/p/order/index.html?spm=a2g0o.best.headerAcount.2.1a6622aevyhKdZ" target="_blank">aiexpres</a></li> <!-- essa tag target serve pra abrir o link e em outra aba -->
+   <li><a href="https://shopee.com.br/cart/">shope</a></li>
+    </ul>
+</body>
+</html>
