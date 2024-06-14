@@ -64,6 +64,10 @@
        td.num {
         text-align: right;
        }
+
+       div#container {
+        overflow-x: auto; /* essa tag faz o a tabela de barra de rolagem pra caber em tela peqeunas */
+       }
        
     </style>
 </head>
@@ -79,170 +83,172 @@
             TR,TD,TH
     -->
 
-    <table>
-        <caption>populacao das unidades Federativas</caption>
-        <thead>
-            <tr>
-                <th scope="col" style="width: 50px;">bancos</th> <!--tag de titulo-->
-                <th>pagamentos</th>
-                <th>junho</th>
-                <th>julho</th>
-                <th>agosto</th>
-                <th>setembro</th>
-                <th>outubro</th>
-                <th>novembro</th>
-                <th>dezembro</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>pan</td> <!--tag de dado -->
-                <td>pago</td>
-                <td class="num">149,87</td>
+    <div id="container">
+        <table>
+            <caption>populacao das unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col" style="width: 50px;">bancos</th> <!--tag de titulo-->
+                    <th>pagamentos</th>
+                    <th>junho</th>
+                    <th>julho</th>
+                    <th>agosto</th>
+                    <th>setembro</th>
+                    <th>outubro</th>
+                    <th>novembro</th>
+                    <th>dezembro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>pan</td> <!--tag de dado -->
+                    <td>pago</td>
+                    <td class="num">149,87</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                <td>novu</td>
+                <td></td>
+                <td class="num">250,41</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
-            </tr>
-            <tr>
-            <td>novu</td>
-            <td></td>
-            <td class="num">250,41</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            </tr>
-            <tr>
-                <td>mercado</td>
-                <td></td>
-                <td class="num">450,34</td>
-                <td class="num">49</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>nunbank</td>
-                <td>pago</td>
-                <td class="num">53,88</td>
-                <td class="num">225,74</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>will</td>
-                <td></td>
-                <td class="num">706,16</td>
-                <td class="num">81,87</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>next</td>
-                <td></td>
-                <td class="num">122,21</td>
-                <td class="num">51,43</td>
-                <td class="num">51,43</td>
-                <td class="num">9,43</td>
-                <td class="num">9,43</td>
-                <td class="num">9,43</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>palmeira</td>
-                <td></td>
-                <td class="num">673,44</td>
-                <td class="num">101,58</td>
-                <td class="num">101,58</td>
-                <td class="num">101,58</td>
-                <td class="num">101,58</td>
-                <td class="num">59,58</td>
-                <td class="num">59,58</td>
-                <td class="num">59,58</td>
-                <td class="num">50,15</td>
-            </tr> 
-             <tr>
-                <td>piclay</td>
-                <td></td>
-                <td class="num">792,35</td>
-                <td class="num">83,10</td>
-                <td class="num">29,22</td>
-                <td class="num">29,22</td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>inter</td>
-                <td>pago</td>
-                <td class="num">234,28</td>
-                <td class="num">228,95</td>
-                <td class="num">130,94</td>
-                <td class="num">130,94</td>
-                <td class="num">111,02</td>
-                <td class="num">111,02</td>
-                <td class="num">111,02</td>
-            </tr>
-            <tr>
-                <td>bb</td>
-                <td></td>
-                <td class="num">187</td>
-                <td class="num">127,90</td>
-                <td class="num">127,90</td>
-                <td class="num">127,90</td>
-                <td class="num">127,90</td>
-                <td class="num">127,90</td>
-                <td class="num">127,90</td>
-            </tr>
-            <tr>
-                <td>smile</td>
-                <td></td>
-                <td class="num">1.386,22</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>santader</td>
-                <td>pago</td>
-                <td class="num">2.058,35</td>
-                <td class="num">301,61</td>
-                <td class="num">98,03</td>
-                <td class="num">98,03</td>
-                <td class="num">98,03</td>
-                <td class="num">98,03</td>
-                <td class="num">98,03</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th scope="row">Total das contas</th>
-                <th></th>
-                <td class="num">7.064,51</td>
-                <td class="num">1.251,18</td>
-                <td class="num">539,10</td>
-                <td class="num">455,10</td>
-                <td class="num">405,96</td>
-                <td class="num">405,96</td>
-                <td class="num">387,10</td>
-            </tr>
-        </tfoot>
-    </table> 
+                </tr>
+                <tr>
+                    <td>mercado</td>
+                    <td></td>
+                    <td class="num">450,34</td>
+                    <td class="num">49</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>nunbank</td>
+                    <td>pago</td>
+                    <td class="num">53,88</td>
+                    <td class="num">225,74</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>will</td>
+                    <td></td>
+                    <td class="num">706,16</td>
+                    <td class="num">81,87</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>next</td>
+                    <td></td>
+                    <td class="num">122,21</td>
+                    <td class="num">51,43</td>
+                    <td class="num">51,43</td>
+                    <td class="num">9,43</td>
+                    <td class="num">9,43</td>
+                    <td class="num">9,43</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>palmeira</td>
+                    <td></td>
+                    <td class="num">673,44</td>
+                    <td class="num">101,58</td>
+                    <td class="num">101,58</td>
+                    <td class="num">101,58</td>
+                    <td class="num">101,58</td>
+                    <td class="num">59,58</td>
+                    <td class="num">59,58</td>
+                    <td class="num">59,58</td>
+                    <td class="num">50,15</td>
+                </tr>
+                 <tr>
+                    <td>piclay</td>
+                    <td></td>
+                    <td class="num">792,35</td>
+                    <td class="num">83,10</td>
+                    <td class="num">29,22</td>
+                    <td class="num">29,22</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>inter</td>
+                    <td>pago</td>
+                    <td class="num">234,28</td>
+                    <td class="num">228,95</td>
+                    <td class="num">130,94</td>
+                    <td class="num">130,94</td>
+                    <td class="num">111,02</td>
+                    <td class="num">111,02</td>
+                    <td class="num">111,02</td>
+                </tr>
+                <tr>
+                    <td>bb</td>
+                    <td></td>
+                    <td class="num">187</td>
+                    <td class="num">127,90</td>
+                    <td class="num">127,90</td>
+                    <td class="num">127,90</td>
+                    <td class="num">127,90</td>
+                    <td class="num">127,90</td>
+                    <td class="num">127,90</td>
+                </tr>
+                <tr>
+                    <td>smile</td>
+                    <td></td>
+                    <td class="num">1.386,22</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>santader</td>
+                    <td>pago</td>
+                    <td class="num">2.058,35</td>
+                    <td class="num">301,61</td>
+                    <td class="num">98,03</td>
+                    <td class="num">98,03</td>
+                    <td class="num">98,03</td>
+                    <td class="num">98,03</td>
+                    <td class="num">98,03</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total das contas</th>
+                    <th></th>
+                    <td class="num">7.064,51</td>
+                    <td class="num">1.251,18</td>
+                    <td class="num">539,10</td>
+                    <td class="num">455,10</td>
+                    <td class="num">405,96</td>
+                    <td class="num">405,96</td>
+                    <td class="num">387,10</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>
