@@ -36,7 +36,8 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /* isso deixa em MAIUSCULO */
     font-family: var(--fonte2);
-    font-size: 6em;
+    font-size: 7vw;
+ 
 }
 
 header > p {
@@ -61,7 +62,11 @@ section {
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 2em;
+    font-size: 3.5em;
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -72,12 +77,30 @@ section.normal {
 section.imagem {
     background-color: rgba(0, 0, 0, 0.233);
     color: white;
+    box-shadow: inset 5px 5px 10px 0px rgba(0, 0, 0, 0.63);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.082);
+    text-shadow: 1px 1px 0px black;
+    
 }
+
+section#img1 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+   
+}
+
+section#img2 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+}
+
 
 footer {
     background-color: black;
